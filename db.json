@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "35fd3f1e-a1a4-4713-af7d-67ac40656b4a",
+      "firstname": "heret",
+      "lastname": "Murimi",
+      "email": "chrismurimi123@gmail.com",
+      "password": "123456780",
+      "course": "web",
+      "termsAccepted": true,
+      "registeredAt": "2025-11-09T21:43:02.195Z"
+    }
+  ],
+  "quickRegistrations": [
+    {
+      "id": "7f4b0ffa-5574-4f39-aab6-6d129fecc945",
+      "email": "chrismurimi123@gmail.com",
+      "password": "12345678",
+      "registeredAt": "2025-11-09T12:13:15.147Z"
+    },
+    {
+      "id": "6cb4fe23-355c-42f7-8575-0c426403f439",
+      "email": "herbet123@gmail.com",
+      "password": "123456789",
+      "registeredAt": "2025-11-09T21:41:32.917Z"
+    }
+  ]
+}

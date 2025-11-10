@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portal | LearnFast Academy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="LearnFast Academy Home">
+        <span class="logo__text">LearnFast</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="nav-list" class="nav__list">
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#courses" class="nav__link">Courses</a></li>
+          <li><a href="#register" class="nav__link">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero__content">
+      <h1 class="hero__title">Launch Your Future Today</h1>
+      <p class="hero__subtitle">Register in seconds. Learn from experts. Earn certificates.</p>
+      <a href="#quick-register" class="btn btn--primary">Quick Register</a>
+    </div>
+  </section>
+
+  <!-- Quick Register Card -->
+  <section class="quick-register" id="quick-register">
+    <div class="container">
+      <div class="card quick-register__card">
+        <h2>Quick Register</h2>
+        <form id="quick-form" class="form quick-form" novalidate>
+          <div class="form__group">
+            <label for="quick-email" class="form__label">Email <span class="required">*</span></label>
+            <input type="email" id="quick-email" class="form__input" placeholder="you@example.com" required />
+            <p class="form__error" aria-live="polite"></p>
+          </div>
+          <div class="form__group">
+            <label for="quick-password" class="form__label">Password <span class="required">*</span></label>
+            <input type="password" id="quick-password" class="form__input" placeholder="Min 8 characters" required minlength="8" />
+            <p class="form__error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn--accent">Get Started</button>
+          <p class="form__success" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section__title">Why Choose LearnFast?</h2>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-icon">📚</div>
+          <h3>Expert Courses</h3>
+          <p>Industry-aligned curriculum by top instructors.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎖️</div>
+          <h3>Certificates</h3>
+          <p>Earn shareable credentials upon completion.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Community</h3>
+          <p>Connect with learners and mentors globally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <div class="container">
+      <h2 class="section__title">Available Courses</h2>
+      <div class="courses__grid">
+        <article class="course-card" tabindex="0" role="button" aria-label="View details for Web Development Bootcamp">
+          <img src="https://via.placeholder.com/300x180/4F46E5/ffffff?text=Web+Dev" alt="" class="course-img" />
+          <div class="course-body">
+            <h3>Web Development Bootcamp</h3>
+            <p class="course-meta">6 weeks • Intermediate</p>
+            <p>HTML, CSS, JS, React, Node.js</p>
+            <button class="btn btn--outline btn--small course-btn" data-modal="modal-web">View Details</button>
+          </div>
+        </article>
+
+        <article class="course-card" tabindex="0" role="button" aria-label="View details for Data Science Fundamentals">
+          <img src="https://via.placeholder.com/300x180/10B981/ffffff?text=Data+Sci" alt="" class="course-img" />
+          <div class="course-body">
+            <h3>Data Science Fundamentals</h3>
+            <p class="course-meta">8 weeks • Beginner</p>
+            <p>Python, Pandas, SQL, Visualization</p>
+            <button class="btn btn--outline btn--small course-btn" data-modal="modal-data">View Details</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Registration Form -->
+  <section class="full-register" id="register">
+    <div class="container">
+      <h2 class="section__title">Complete Your Registration</h2>
+      <form id="full-form" class="form full-form" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="full-firstname" class="form__label">First Name <span class="required">*</span></label>
+            <input type="text" id="full-firstname" class="form__input" required />
+            <p class="form__error" aria-live="polite"></p>
+          </div>
+          <div class="form__group">
+            <label for="full-lastname" class="form__label">Last Name <span class="required">*</span></label>
+            <input type="text" id="full-lastname" class="form__input" required />
+            <p class="form__error" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="full-email" class="form__label">Email <span class="required">*</span></label>
+          <input type="email" id="full-email" class="form__input" required />
+          <p class="form__error" aria-live="polite"></p>
+        </div>
+
+        <div class="form__group">
+          <label for="full-password" class="form__label">Password <span class="required">*</span></label>
+          <input type="password" id="full-password" class="form__input" required minlength="8" />
+          <p class="form__error" aria-live="polite"></p>
+        </div>
+
+        <div class="form__group">
+          <label for="full-course" class="form__label">Interested Course</label>
+          <select id="full-course" class="form__input">
+            <option value="">Select a course</option>
+            <option value="web">Web Development Bootcamp</option>
+            <option value="data">Data Science Fundamentals</option>
+          </select>
+        </div>
+
+        <div class="form__group checkbox-group">
+          <input type="checkbox" id="terms" required />
+          <label for="terms" class="form__label--inline">
+            I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a>
+          </label>
+          <p class="form__error" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--large">Complete Registration</button>
+        <p class="form__success" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Course Detail Modal -->
+  <div class="modal" id="modal-web" role="dialog" aria-labelledby="modal-web-title" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Close modal">✕</button>
+      <h3 id="modal-web-title">Web Development Bootcamp</h3>
+      <p><strong>Duration:</strong> 6 weeks</p>
+      <p><strong>Level:</strong> Intermediate</p>
+      <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js, APIs</p>
+      <p>Build real-world projects and deploy live apps.</p>
+      <a href="#register" class="btn btn--primary">Enroll Now</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-data" role="dialog" aria-labelledby="modal-data-title" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Close modal">✕</button>
+      <h3 id="modal-data-title">Data Science Fundamentals</h3>
+      <p><strong>Duration:</strong> 8 weeks</p>
+      <p><strong>Level:</strong> Beginner</p>
+      <p><strong>Skills:</strong> Python, Pandas, SQL, Matplotlib, Statistics</p>
+      <p>Analyze real datasets and build predictive models.</p>
+      <a href="#register" class="btn btn--primary">Enroll Now</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2025 LearnFast Academy. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#" class="link">Privacy</a>
+        <a href="#" class="link">Terms</a>
+        <a href="#" class="link">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
